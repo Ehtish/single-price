@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --yellow: #c0e079;
+  --light-green: #1abc9c;
+  --green: #16a085;
+  --white: #ffffff;
+}
+body {
+  font-family: "Lato", serif;
+  text-transform: capitalize;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.row h2 {
+  color: white;
+}
+.row p {
+  color: #f4ebeb;
+}
+div .row .subscription {
+  background-color: var(--green);
+}
+.why {
+  background-color: var(--light-green);
+}
+.why p {
+  line-height: 10px;
+}
+.btn {
+  padding: 14px 125px;
+  color: #ffffff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .main,
+  .subscription,
+  .why,
+  p,
+  h2,
+  h1,
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .btn {
+    padding: 14px 100px;
+  }
+}
